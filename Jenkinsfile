@@ -1,6 +1,6 @@
 
 
-pip[eline{
+pipeline{
 
 agent any
 
@@ -24,5 +24,3 @@ agent any
              }
         }
     }
-
-
