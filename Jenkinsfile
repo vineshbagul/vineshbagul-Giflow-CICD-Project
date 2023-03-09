@@ -9,19 +9,20 @@ agent any
    agent {
 
     docker {
-      image 'maven'
+                 image 'maven'
+            }
           }
-      }
 
       step{
 
-        script {
-        withSonarQubeEnv(credentialsId: 'sonar-token') {
-            // some block
-            bash 'mvn clean package sonar:sonar'
+           script {
+             withSonarQubeEnv(credentialsId: 'sonar-token') {
+                // some block
+                     bash 'mvn clean package sonar:sonar'
+                                         }
+                  }
+             }
         }
-        }
-        }
-        }
-       }
-      }
+    }
+
+
